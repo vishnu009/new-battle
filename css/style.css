@@ -78,9 +78,9 @@ float: left;
 width: 256px;
 height: auto;
 }
-.rightcontent {
+.right_content {
 float: right;
-width: 656px;
+margin-top: 48px;
 }
 .clear{
 	margin-left: 20px;
@@ -105,4 +105,11 @@ width: 656px;
 	height: 35px;
 	float: left;
 
+}
+.span4{
+	width: 350px;
+	display: inline-block;
+}
+.span8{
+	width:550px;
 }
