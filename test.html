@@ -1,0 +1,1187 @@
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>BattleBook</title>
+        <link href="lp_style.css" rel="stylesheet" type="text/css" />
+        </head>
+        <body class="tundra" style="background: url(img/bg1.gif) repeat-x;">
+        <form name="form1" method="post" action="Default.aspx?action=logout" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+        <div>
+        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQ3MzgxMjY5MA9kFgICAQ9kFgwCAw8PFgIeBFRleHQFFFRoYW5rcyBmb3IgdmlzaXRpbmchZGQCEw9kFgYCEQ8QZA8WH2YCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwCDQIOAg8CEAIRAhICEwIUAhUCFgIXAhgCGQIaAhsCHAIdAh4WHxAFAjAxBQIwMWcQBQIwMgUCMDJnEAUCMDMFAjAzZxAFAjA0BQIwNGcQBQIwNQUCMDVnEAUCMDYFAjA2ZxAFAjA3BQIwN2cQBQIwOAUCMDhnEAUCMDkFAjA5ZxAFAjEwBQIxMGcQBQIxMQUCMTFnEAUCMTIFAjEyZxAFAjEzBQIxM2cQBQIxNAUCMTRnEAUCMTUFAjE1ZxAFAjE2BQIxNmcQBQIxNwUCMTdnEAUCMTgFAjE4ZxAFAjE5BQIxOWcQBQIyMAUCMjBnEAUCMjEFAjIxZxAFAjIyBQIyMmcQBQIyMwUCMjNnEAUCMjQFAjI0ZxAFAjI1BQIyNWcQBQIyNgUCMjZnEAUCMjcFAjI3ZxAFAjI4BQIyOGcQBQIyOQUCMjlnEAUCMzAFAjMwZxAFAjMxBQIzMWdkZAITDxBkDxYMZgIBAgICAwIEAgUCBgIHAggCCQIKAgsWDBAFAjAxBQIwMWcQBQIwMgUCMDJnEAUCMDMFAjAzZxAFAjA0BQIwNGcQBQIwNQUCMDVnEAUCMDYFAjA2ZxAFAjA3BQIwN2cQBQIwOAUCMDhnEAUCMDkFAjA5ZxAFAjEwBQIxMGcQBQIxMQUCMTFnEAUCMTIFAjEyZ2RkAhUPEGQPFntmAgECAgIDAgQCBQIGAgcCCAIJAgoCCwIMAg0CDgIPAhACEQISAhMCFAIVAhYCFwIYAhkCGgIbAhwCHQIeAh8CIAIhAiICIwIkAiUCJgInAigCKQIqAisCLAItAi4CLwIwAjECMgIzAjQCNQI2AjcCOAI5AjoCOwI8Aj0CPgI/AkACQQJCAkMCRAJFAkYCRwJIAkkCSgJLAkwCTQJOAk8CUAJRAlICUwJUAlUCVgJXAlgCWQJaAlsCXAJdAl4CXwJgAmECYgJjAmQCZQJmAmcCaAJpAmoCawJsAm0CbgJvAnACcQJyAnMCdAJ1AnYCdwJ4AnkCehZ7EAUEMjAxMgUEMjAxMmcQBQQyMDExBQQyMDExZxAFBDIwMTAFBDIwMTBnEAUEMjAwOQUEMjAwOWcQBQQyMDA4BQQyMDA4ZxAFBDIwMDcFBDIwMDdnEAUEMjAwNgUEMjAwNmcQBQQyMDA1BQQyMDA1ZxAFBDIwMDQFBDIwMDRnEAUEMjAwMwUEMjAwM2cQBQQyMDAyBQQyMDAyZxAFBDIwMDEFBDIwMDFnEAUEMjAwMAUEMjAwMGcQBQQxOTk5BQQxOTk5ZxAFBDE5OTgFBDE5OThnEAUEMTk5NwUEMTk5N2cQBQQxOTk2BQQxOTk2ZxAFBDE5OTUFBDE5OTVnEAUEMTk5NAUEMTk5NGcQBQQxOTkzBQQxOTkzZxAFBDE5OTIFBDE5OTJnEAUEMTk5MQUEMTk5MWcQBQQxOTkwBQQxOTkwZxAFBDE5ODkFBDE5ODlnEAUEMTk4OAUEMTk4OGcQBQQxOTg3BQQxOTg3ZxAFBDE5ODYFBDE5ODZnEAUEMTk4NQUEMTk4NWcQBQQxOTg0BQQxOTg0ZxAFBDE5ODMFBDE5ODNnEAUEMTk4MgUEMTk4MmcQBQQxOTgxBQQxOTgxZxAFBDE5ODAFBDE5ODBnEAUEMTk3OQUEMTk3OWcQBQQxOTc4BQQxOTc4ZxAFBDE5NzcFBDE5NzdnEAUEMTk3NgUEMTk3NmcQBQQxOTc1BQQxOTc1ZxAFBDE5NzQFBDE5NzRnEAUEMTk3MwUEMTk3M2cQBQQxOTcyBQQxOTcyZxAFBDE5NzEFBDE5NzFnEAUEMTk3MAUEMTk3MGcQBQQxOTY5BQQxOTY5ZxAFBDE5NjgFBDE5NjhnEAUEMTk2NwUEMTk2N2cQBQQxOTY2BQQxOTY2ZxAFBDE5NjUFBDE5NjVnEAUEMTk2NAUEMTk2NGcQBQQxOTYzBQQxOTYzZxAFBDE5NjIFBDE5NjJnEAUEMTk2MQUEMTk2MWcQBQQxOTYwBQQxOTYwZxAFBDE5NTkFBDE5NTlnEAUEMTk1OAUEMTk1OGcQBQQxOTU3BQQxOTU3ZxAFBDE5NTYFBDE5NTZnEAUEMTk1NQUEMTk1NWcQBQQxOTU0BQQxOTU0ZxAFBDE5NTMFBDE5NTNnEAUEMTk1MgUEMTk1MmcQBQQxOTUxBQQxOTUxZxAFBDE5NTAFBDE5NTBnEAUEMTk0OQUEMTk0OWcQBQQxOTQ4BQQxOTQ4ZxAFBDE5NDcFBDE5NDdnEAUEMTk0NgUEMTk0NmcQBQQxOTQ1BQQxOTQ1ZxAFBDE5NDQFBDE5NDRnEAUEMTk0MwUEMTk0M2cQBQQxOTQyBQQxOTQyZxAFBDE5NDEFBDE5NDFnEAUEMTk0MAUEMTk0MGcQBQQxOTM5BQQxOTM5ZxAFBDE5MzgFBDE5MzhnEAUEMTkzNwUEMTkzN2cQBQQxOTM2BQQxOTM2ZxAFBDE5MzUFBDE5MzVnEAUEMTkzNAUEMTkzNGcQBQQxOTMzBQQxOTMzZxAFBDE5MzIFBDE5MzJnEAUEMTkzMQUEMTkzMWcQBQQxOTMwBQQxOTMwZxAFBDE5MjkFBDE5MjlnEAUEMTkyOAUEMTkyOGcQBQQxOTI3BQQxOTI3ZxAFBDE5MjYFBDE5MjZnEAUEMTkyNQUEMTkyNWcQBQQxOTI0BQQxOTI0ZxAFBDE5MjMFBDE5MjNnEAUEMTkyMgUEMTkyMmcQBQQxOTIxBQQxOTIxZxAFBDE5MjAFBDE5MjBnEAUEMTkxOQUEMTkxOWcQBQQxOTE4BQQxOTE4ZxAFBDE5MTcFBDE5MTdnEAUEMTkxNgUEMTkxNmcQBQQxOTE1BQQxOTE1ZxAFBDE5MTQFBDE5MTRnEAUEMTkxMwUEMTkxM2cQBQQxOTEyBQQxOTEyZxAFBDE5MTEFBDE5MTFnEAUEMTkxMAUEMTkxMGcQBQQxOTA5BQQxOTA5ZxAFBDE5MDgFBDE5MDhnEAUEMTkwNwUEMTkwN2cQBQQxOTA2BQQxOTA2ZxAFBDE5MDUFBDE5MDVnEAUEMTkwNAUEMTkwNGcQBQQxOTAzBQQxOTAzZxAFBDE5MDIFBDE5MDJnEAUEMTkwMQUEMTkwMWcQBQQxOTAwBQQxOTAwZxAFBDE4OTkFBDE4OTlnEAUEMTg5OAUEMTg5OGcQBQQxODk3BQQxODk3ZxAFBDE4OTYFBDE4OTZnEAUEMTg5NQUEMTg5NWcQBQQxODk0BQQxODk0ZxAFBDE4OTMFBDE4OTNnEAUEMTg5MgUEMTg5MmcQBQQxODkxBQQxODkxZxAFBDE4OTAFBDE4OTBnZGQCFQ88KwAJAQAPFgQeCERhdGFLZXlzFgAeC18hSXRlbUNvdW50AghkFhBmD2QWAmYPFQMsZG1sMlpXc3VZMmhoYm1SeVlVQnRZWGh6YjJaMGQyRnlaUzVqYjIwdVlYVT0VaW1hZ2VzL1NpbGhvdWV0dGUuanBnDUdyZW1saW4gQm9zLi5kAgEPZBYCZg8VAxxkbWx6YUc1MUxtdDJjMEJuYldGcGJDNWpiMjA9FWltYWdlcy9TaWxob3VldHRlLmpwZwh2aXNobnUga2QCAg9kFgJmDxUDHGRtbHJZWE5vYjJ4cllYSkFaMjFoYVd3dVkyOXQVaW1hZ2VzL1NpbGhvdWV0dGUuanBnDXZpa2FzIGhvbGthLi5kAgMPZBYCZg8VAxBZV0pqUUdGaVl5NWpiMjA9FWltYWdlcy9TaWxob3VldHRlLmpwZwNhIGJkAgQPZBYCZg8VAyxkbWxyWVhNdWFHOXNhMkZ5UUcxaGVITnZablIzWVhKbExtTnZiUzVoZFE9PRVpbWFnZXMvU2lsaG91ZXR0ZS5qcGcNVmlrYXMgSG9sa2EuLmQCBQ9kFgJmDxUDCGRtbHJZWE5vFWltYWdlcy9TaWxob3VldHRlLmpwZw1WaWthcyBIb2xrYS4uZAIGD2QWAmYPFQMsYTI5MGFTNXRkV3QwYVc1bGJtbEFiV0Y0YzI5bWRIZGhjbVV1WTI5dExtRjEVaW1hZ2VzL1NpbGhvdWV0dGUuanBnBmtvdGkgTWQCBw9kFgJmDxUDHGRtbDJRR0poZEhSc1pXSjFibXRsY2k1amIyMD0VaW1hZ2VzL1NpbGhvdWV0dGUuanBnCE1yIEdyZWVuZAIXDzwrAAkBAA8WBB8BFgAfAgIIZBYQZg9kFgJmDxUEKFpuSmxaRjlyYVc1blgybG5kV0Z1WVVCb2IzUnRZV2xzTG1OdmJRPT0MVFdVZ2JXRnBibXg1AjEzS2dhbGxlcnkvZnJlZF9raW5nX2lndWFuYUBob3RtYWlsLmNvbV9sX2JkYTFjZTY5OWZlYzVjYzIzODY4Zjc1NjY2NDIwOTkxLmpwZ2QCAQ9kFgJmDxUEKFpuSmxaRjlyYVc1blgybG5kV0Z1WVVCb2IzUnRZV2xzTG1OdmJRPT0MVFdVZ2JXRnBibXg1AjEyS2dhbGxlcnkvZnJlZF9raW5nX2lndWFuYUBob3RtYWlsLmNvbV9sXzllZTQwODRhZDg0ZTY1OTdiZDdjNjY5YzdjMzdjN2IzLmpwZ2QCAg9kFgJmDxUEKFpuSmxaRjlyYVc1blgybG5kV0Z1WVVCb2IzUnRZV2xzTG1OdmJRPT0MVFdVZ2JXRnBibXg1AjExMGdhbGxlcnkvZnJlZF9raW5nX2lndWFuYUBob3RtYWlsLmNvbV9wcm9maWxlLmpwZ2QCAw9kFgJmDxUEIFkyaGhibWRsZW5Ob1lXbHJhRUJuYldGcGJDNWpiMjA9HFZHaGxJR1pwY25OMElHVjJaWElnWVd4aWRXMD0CMTBFZ2FsbGVyeS9jaGFuZ2V6c2hhaWtoQGdtYWlsLmNvbV9hc3Nhc3NpbnMtY3JlZWQtMjAwNjA5MjExMDUzMzIxMTcuanBnZAIED2QWAmYPFQQcWjNWd2RIbGliM2xBYUc5MGJXRnBiQzVqYjIwPRhWMkZ5YUdGdGJXVnlJRkJ2YzNSbGNuTT0BOTFnYWxsZXJ5L2d1cHR5Ym95QGhvdG1haWwuY29tX3dhcmhhbW1lcl9wb3N0ZXIuanBnZAIFD2QWAmYPFQQcWjNWd2RIbGliM2xBYUc5MGJXRnBiQzVqYjIwPRhWMkZ5YUdGdGJXVnlJRkJ2YzNSbGNuTT0BODdnYWxsZXJ5L2d1cHR5Ym95QGhvdG1haWwuY29tX2Nob3Nlbl92X3dhcnJpb3JQcmllc3QuanBnZAIGD2QWAmYPFQQcWjNWd2RIbGliM2xBYUc5MGJXRnBiQzVqYjIwPRhWMkZ5YUdGdGJXVnlJRkJ2YzNSbGNuTT0BNzRnYWxsZXJ5L2d1cHR5Ym95QGhvdG1haWwuY29tXzQwayBBd2t3YXJkIE1vbWVudHMuanBnZAIHD2QWAmYPFQQcWjNWd2RIbGliM2xBYUc5MGJXRnBiQzVqYjIwPRhWMkZ5YUdGdGJXVnlJRkJ2YzNSbGNuTT0BNjFnYWxsZXJ5L2d1cHR5Ym95QGhvdG1haWwuY29tX2R3YXJmdnNsaXphcmRtZW4uanBnZAIZDzwrAAkBAA8WBB8BFgAfAgIIZBYQZg9kFgJmDxUEIGMyRnVZMmhwZEM1emFHRnliV0ZBWjIxaGFXd3VZMjl0DFZXNXpiM0owWldRPQIxOCtodHRwOi8vaW1nLnlvdXR1YmUuY29tL3ZpL0o3TkdXbjUydElnLzIuanBnZAIBD2QWAmYPFQQgYzJGdVkyaHBkQzV6YUdGeWJXRkFaMjFoYVd3dVkyOXQMVlc1emIzSjBaV1E9AjE3K2h0dHA6Ly9pbWcueW91dHViZS5jb20vdmkvblQzbXh1bmgza0UvMi5qcGdkAgIPZBYCZg8VBCBjMmxrYUhWaWFHRjBhV0V5TTBCbmJXRnBiQzVqYjIwPQhUMUpMVXc9PQIxNitodHRwOi8vaW1nLnlvdXR1YmUuY29tL3ZpL25EbTdPdjdTM0FVLzIuanBnZAIDD2QWAmYPFQQcWjNWd2RIbGliM2xBYUc5MGJXRnBiQzVqYjIwPQxWVzV6YjNKMFpXUT0CMTQraHR0cDovL2ltZy55b3V0dWJlLmNvbS92aS9OVVlMN2pOZlo0MC8yLmpwZ2QCBA9kFgJmDxUEHFozVndkSGxpYjNsQWFHOTBiV0ZwYkM1amIyMD0MVlc1emIzSjBaV1E9AjEzK2h0dHA6Ly9pbWcueW91dHViZS5jb20vdmkvb3VrZlhEM1VhRVkvMi5qcGdkAgUPZBYCZg8VBBxaM1Z3ZEhsaWIzbEFhRzkwYldGcGJDNWpiMjA9DFZXNXpiM0owWldRPQIxMitodHRwOi8vaW1nLnlvdXR1YmUuY29tL3ZpLzJ1c1Y3VERSUXVrLzIuanBnZAIGD2QWAmYPFQQcWjNWd2RIbGliM2xBYUc5MGJXRnBiQzVqYjIwPQxWVzV6YjNKMFpXUT0CMTEraHR0cDovL2ltZy55b3V0dWJlLmNvbS92aS9JNmxaRWp0STlhYy8yLmpwZ2QCBw9kFgJmDxUEHFozVndkSGxpYjNsQWFHOTBiV0ZwYkM1amIyMD0MVlc1emIzSjBaV1E9AjEwK2h0dHA6Ly9pbWcueW91dHViZS5jb20vdmkvNjFOMUpJYWF4cUEvMi5qcGdkAh0PPCsACQEADxYEHwEWAB8CAgJkFgQCAQ9kFghmDxUDHFozVndkSGxpYjNsQWFHOTBiV0ZwYkM1amIyMD0BMwEyZAIBDw8WAh8ABQNhZHNkZAIDD2QWAmYPFQIcWjNWd2RIbGliM2xBYUc5MGJXRnBiQzVqYjIwPQ1DdXJ0aXMgQ3JvdWNoZAIFD2QWAmYPFQEUNC8yNC8yMDA5IDk6NTI6MjcgUE1kAgIPZBYIZg8VAxxaM1Z3ZEhsaWIzbEFhRzkwYldGcGJDNWpiMjA9ATIBMmQCAQ8PFgIfAAUTTm93IHRoZSBmdW4gYmVnaW5zIWRkAgMPZBYCZg8VAhxaM1Z3ZEhsaWIzbEFhRzkwYldGcGJDNWpiMjA9DUN1cnRpcyBDcm91Y2hkAgUPZBYCZg8VARQ0LzI0LzIwMDkgMjozOTozNyBQTWQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgQFBnN1Ym1pdAUGY2hlY2sxBQZjaGVjazIFB0J1dHRvbjH3Knz49KBexLH6K2IHCpQGF3JuDA==" />
+        </div>
+
+        <script type="text/javascript">
+        //<![CDATA[
+        var theForm = document.forms['form1'];
+        if (!theForm) {
+        theForm = document.form1;
+        }
+        function __doPostBack(eventTarget, eventArgument) {
+        if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+        }
+        }
+        //]]>
+        </script>
+
+
+        <script src="/WebResource.axd?d=8EXU-r7Zq-_XTIzwah-mBQ2&amp;t=634143169502603750" type="text/javascript"></script>
+
+
+        <script src="/ScriptResource.axd?d=M7jbuo7ZPZbbTqsKzRV1Lb7UAAZ32SuVA4012KnmaxfDZkfr-0q7pfcklT-bqTwN8Cgnop1n9pd9zsJ2Y5EsmA2&amp;t=5a3f3199" type="text/javascript"></script>
+        <script src="/ScriptResource.axd?d=JHbuoH4fOxoU18fRoi-IktcYtYv_cV9YLHBd37jPmZkAPLw0qZQiBqSP4XAbZBGaOjfhNpr2-ZQZvvyrIKZjQc92mxN_8sgHp9drHKLlVnQ1&amp;t=42fa2a0a" type="text/javascript"></script>
+        <script type="text/javascript">
+        //<![CDATA[
+        if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+        //]]>
+        </script>
+
+        <script src="/ScriptResource.axd?d=JHbuoH4fOxoU18fRoi-IktcYtYv_cV9YLHBd37jPmZkAPLw0qZQiBqSP4XAbZBGa0OgNM5zIgr4HX8RI23NLn2TbOMC47BopjRUzK3m8pifHap1n2c9jXRV3Lx7HwDjK0&amp;t=42fa2a0a" type="text/javascript"></script>
+        <script src="/ScriptResource.axd?d=tEHUkOq9D1ho0zt3VkrffIcCt31flbjAvnQJrD4KHWkYpklXi0pT1ChQ1C5xLOhHJqmM-M3dgUvWzv9malS95g2&amp;t=ffffffffa585a7f0" type="text/javascript"></script>
+        <script src="/ScriptResource.axd?d=tEHUkOq9D1ho0zt3VkrffIcCt31flbjAvnQJrD4KHWkf2WHFk3tsUgwTe5HbxL_DaxEJPOlxXehlGzbWmzbvjC-CMJgRHB07henZFQqBSNk1&amp;t=ffffffffa585a7f0" type="text/javascript"></script>
+        <script src="/ScriptResource.axd?d=tEHUkOq9D1ho0zt3VkrffIcCt31flbjAvnQJrD4KHWl4DnnBbakKo35QIXCZQhlP_C2ZnHSe7CGlGH-u-NUEvwIGPZbpN57S5LUYgIfkb801&amp;t=ffffffffa585a7f0" type="text/javascript"></script>
+        <script type="text/javascript">
+        //<![CDATA[
+        function WebForm_OnSubmit() {
+        null;if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+        return true;
+        }
+        //]]>
+        </script>
+
+        <div>
+
+        <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWswECh/mR0Q8Cr6bqtggCyJGxiQgC8r3gkQ8Ci/aY9AIC3LuEtgQC2/PNzw4C0M3ylQoC4tDylQoCrvSYhA0Css3Ggw0Cye/itQUCye/mtQUCye/atQUCye/etQUCye/StQUCye/WtQUCye/KtQUCye+OtgUCye+CtgUC1u/utQUC1u/itQUC1u/mtQUC1u/atQUC1u/etQUC1u/StQUC1u/WtQUC1u/KtQUC1u+OtgUC1u+CtgUC1+/utQUC1+/itQUC1+/mtQUC1+/atQUC1+/etQUC1+/StQUC1+/WtQUC1+/KtQUC1++OtgUC1++CtgUC1O/utQUC1O/itQUCpfqv5AYCpfqr5AYCpfqX5AYCpfqT5AYCpfqf5AYCpfqb5AYCpfqH5AYCpfrD5wYCpfrP5wYCuvqj5AYCuvqv5AYCuvqr5AYCv8qU0AYCv8qA9w8Cv8q8qgQC1POOswMC1PO61gsC1POWvw0C1POC0gUC1PO+iQoC1POqrAMC1PPGwAsC1PPyZwLU8+6aCQLU85qxDgKQkPPHCwKQkO96ApCQ28MFApCQ9+YKApCQ450DApCQn7AIApCQi1cCkJCnigkCkJDTrg4CkJDPxQYCrbnR6gUCrbnNgQoCrbm56Q8CrbnVjQQCrbnBoA0Crbn9xwUCrbnp+goCrbmFkQMCrbmxtAgCrbmtawKa05GsCgKa043DAgKa0/moBAKa05XPDAKa04HiBQKa072ZCgKa06m8AwKa08XQCwKa0/F3AprT7aoJArf4/7MEArf469YMArf4x78OArf489IGArf474kPArf4m6wEArf4t8MMArf4o+YFArf435oKArf4y7EDAszh3cYBAszhyf0GAszhpcULAszh0XkCzOHNnAkCzOH5sw4CzOGV1gYCzOGBjQ8CzOG9oAQCzOGpxwwC6Y677AsC6Y5XAumOg+gFAumOv48KAumOq6IDAumOx8YLAumO830C6Y7vkAkC6Y6btw4C6Y636gYChrSZ8wUChrS1lgoChrTh/w8ChrSdkgQChrSJyQwChrSl7AUChrTRgAoChrTNpwMChrT52gsChrSVcQKj3eaGDwKj3ZK9BAKj3c6CCQKj3fq5DgKj3ZbcBgKj3YLzDwKj3b6WBAKj3arNDAKj3cbhBQKj3fKECgK4ysStCQK4yvDAAQK4yqyoAwK4ytjMCwK4yvRjArjK4IYJArjKnL0OArjKiNAGArjKpPcPArjK0KsEAtXzorMDAtXz3tcLAtXzir8NAtXzptIFAtXz0vYKAtXzzq0DAtXz+sALAtXzlmcC1fOCmgkC1fO+sQ4CkJD/xwsCkJDregKQkMfDBQKQkPPmCgKQkO+dAwKQkJuwCAKQkLdXApCQo4oJApCQ364OApCQy8UGAtvzwc8OAoznisYGuTw66IVF5sljSzjmHULQXFXGE/g=" />
+        </div>
+        <div class="container">
+        <div class="header">
+        <div class="empty">
+        </div>
+        <div class="login_form">
+        <script type="text/javascript">
+        //<![CDATA[
+        Sys.WebForms.PageRequestManager._initialize('script', document.getElementById('form1'));
+        Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+        //]]>
+        </script>
+
+        <span class="banner_text">
+        <span id="lbl1">Thanks for visiting!</span></span>
+        <table>
+        <tr>
+        <td style="padding-right: 5px;">
+        <input name="username" type="text" id="username" style="width:137px;" />
+        <input type="hidden" name="t1_ClientState" id="t1_ClientState" />
+        </td>
+        <td style="padding-right: 5px;">
+        <input name="password" type="password" id="password" style="width:89px;" />
+        <input type="hidden" name="TextBoxWatermarkExtender1_ClientState" id="TextBoxWatermarkExtender1_ClientState" />
+        </td>
+        <td>
+        <input type="image" name="submit" id="submit" src="img/report_button.png" style="border-width:0px;" />
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <table>
+        <tr>
+        <td style="padding: 0px;">
+        <input id="check1" type="checkbox" name="check1" />
+        </td>
+        <td>
+        <span class="banner_text">Remember Me</span>
+        </td>
+        </tr>
+        </table>
+        </td>
+        <td>
+        <span class="banner_text">Forgot your password?</span>
+        </td>
+        </tr>
+        </table>
+        </div>
+        </div>
+        <div class="content">
+        <div class="leftcontent">
+        <table width="300" border="0" cellpadding="0" cellspacing="0" style="padding: 0;">
+        <tr>
+        <td width="9px" height="9px" style="background: url(img/uc_topleft.png) no-repeat;">
+        </td>
+        <td width="100%" height="9px" background="img/uc_topfill.png">
+        </td>
+        <td width="9px" height="9px">
+        <img src="img/uc_topright.png" width="9" height="9" />
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="auto" style="background: url(img/uc_leftfill.png) repeat-y;">
+        </td>
+        <td width="100%" height="auto" bgcolor="#FFFFFF" style="padding: 0px;">
+        <div class="reg_form">
+        <div class="text_reg">
+        <span class="spanHeader"><strong>Not yet enlisted?</strong></span><br />
+        <br />
+        <span id="Duplicate">
+        <strong>Get a move on, your comrades need you</strong>
+        </span>
+        </div>
+        <form>
+        <div id="panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'Button1')">
+
+
+
+        <table class="signupform">
+        <tr>
+        <td>
+        First Name
+        </td>
+        <td>
+        <input name="fname" type="text" id="fname" />
+        <span id="RequiredFieldValidator1" style="color:Red;visibility:hidden;">
+        *
+        </span>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        Last Name
+        </td>
+        <td>
+        <input name="lname" type="text" id="lname" />
+        <span id="RequiredFieldValidator2" style="color:Red;visibility:hidden;">
+        *
+        </span>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        Password
+        </td>
+        <td>
+        <input name="password1" type="password" id="password1" />
+        <span id="RequiredFieldValidator3" style="color:Red;visibility:hidden;">
+        *
+        </span>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        Email
+        </td>
+        <td>
+        <input name="email" type="text" id="email" />
+        <span id="RequiredFieldValidator4" style="color:Red;visibility:hidden;">
+        *
+        </span>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        Birthday
+        </td>
+        <td>
+        <select name="day" id="day" style="height:20px;width:43px;">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+
+        </select>
+        <select name="month" id="month" style="height:20px;width:43px;">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+
+        </select>
+        <select name="year" id="year" style="height:20px;width:60px;">
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
+        <option value="2007">2007</option>
+        <option value="2006">2006</option>
+        <option value="2005">2005</option>
+        <option value="2004">2004</option>
+        <option value="2003">2003</option>
+        <option value="2002">2002</option>
+        <option value="2001">2001</option>
+        <option value="2000">2000</option>
+        <option value="1999">1999</option>
+        <option value="1998">1998</option>
+        <option value="1997">1997</option>
+        <option value="1996">1996</option>
+        <option value="1995">1995</option>
+        <option value="1994">1994</option>
+        <option value="1993">1993</option>
+        <option value="1992">1992</option>
+        <option value="1991">1991</option>
+        <option value="1990">1990</option>
+        <option value="1989">1989</option>
+        <option value="1988">1988</option>
+        <option value="1987">1987</option>
+        <option value="1986">1986</option>
+        <option value="1985">1985</option>
+        <option value="1984">1984</option>
+        <option value="1983">1983</option>
+        <option value="1982">1982</option>
+        <option value="1981">1981</option>
+        <option value="1980">1980</option>
+        <option value="1979">1979</option>
+        <option value="1978">1978</option>
+        <option value="1977">1977</option>
+        <option value="1976">1976</option>
+        <option value="1975">1975</option>
+        <option value="1974">1974</option>
+        <option value="1973">1973</option>
+        <option value="1972">1972</option>
+        <option value="1971">1971</option>
+        <option value="1970">1970</option>
+        <option value="1969">1969</option>
+        <option value="1968">1968</option>
+        <option value="1967">1967</option>
+        <option value="1966">1966</option>
+        <option value="1965">1965</option>
+        <option value="1964">1964</option>
+        <option value="1963">1963</option>
+        <option value="1962">1962</option>
+        <option value="1961">1961</option>
+        <option value="1960">1960</option>
+        <option value="1959">1959</option>
+        <option value="1958">1958</option>
+        <option value="1957">1957</option>
+        <option value="1956">1956</option>
+        <option value="1955">1955</option>
+        <option value="1954">1954</option>
+        <option value="1953">1953</option>
+        <option value="1952">1952</option>
+        <option value="1951">1951</option>
+        <option value="1950">1950</option>
+        <option value="1949">1949</option>
+        <option value="1948">1948</option>
+        <option value="1947">1947</option>
+        <option value="1946">1946</option>
+        <option value="1945">1945</option>
+        <option value="1944">1944</option>
+        <option value="1943">1943</option>
+        <option value="1942">1942</option>
+        <option value="1941">1941</option>
+        <option value="1940">1940</option>
+        <option value="1939">1939</option>
+        <option value="1938">1938</option>
+        <option value="1937">1937</option>
+        <option value="1936">1936</option>
+        <option value="1935">1935</option>
+        <option value="1934">1934</option>
+        <option value="1933">1933</option>
+        <option value="1932">1932</option>
+        <option value="1931">1931</option>
+        <option value="1930">1930</option>
+        <option value="1929">1929</option>
+        <option value="1928">1928</option>
+        <option value="1927">1927</option>
+        <option value="1926">1926</option>
+        <option value="1925">1925</option>
+        <option value="1924">1924</option>
+        <option value="1923">1923</option>
+        <option value="1922">1922</option>
+        <option value="1921">1921</option>
+        <option value="1920">1920</option>
+        <option value="1919">1919</option>
+        <option value="1918">1918</option>
+        <option value="1917">1917</option>
+        <option value="1916">1916</option>
+        <option value="1915">1915</option>
+        <option value="1914">1914</option>
+        <option value="1913">1913</option>
+        <option value="1912">1912</option>
+        <option value="1911">1911</option>
+        <option value="1910">1910</option>
+        <option value="1909">1909</option>
+        <option value="1908">1908</option>
+        <option value="1907">1907</option>
+        <option value="1906">1906</option>
+        <option value="1905">1905</option>
+        <option value="1904">1904</option>
+        <option value="1903">1903</option>
+        <option value="1902">1902</option>
+        <option value="1901">1901</option>
+        <option value="1900">1900</option>
+        <option value="1899">1899</option>
+        <option value="1898">1898</option>
+        <option value="1897">1897</option>
+        <option value="1896">1896</option>
+        <option value="1895">1895</option>
+        <option value="1894">1894</option>
+        <option value="1893">1893</option>
+        <option value="1892">1892</option>
+        <option value="1891">1891</option>
+        <option value="1890">1890</option>
+
+        </select>
+        <br />
+        </td>
+        </tr>
+        <tr>
+        <td align = "right">
+        <input id="check2" type="checkbox" name="check2" />
+        </td>
+        <td>
+        I agree to the <a href = "terms.aspx">terms and conditions</a>
+        <span id="terstar" style="color:Red;"></span>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        </td>
+        <td>
+        <input type="image" name="Button1" id="Button1" src="img/enlistme.png" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;Button1&quot;, &quot;&quot;, true, &quot;second&quot;, &quot;&quot;, false, false))" style="border-width:0px;" />
+        </td>
+        </tr>
+        </table>
+
+        </div>
+        </form>
+        </div>
+        </td>
+        <td width="9px" height="auto" background="img/uc_rightfill.png">
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="11px" align="right">
+        <img src="img/uc_botleft.png" width="9" height="11" />
+        </td>
+        <td width="auto" height="11px" background="img/uc_botfill.png">
+        </td>
+        <td width="9" height="11px">
+        <img src="img/uc_botright.png" width="9" height="11" />
+        </td>
+        </tr>
+        </table>
+        <br />
+        <br />
+        <table width="300" border="0" cellpadding="0" cellspacing="0" style="padding: 0;">
+        <tr>
+        <td width="9px" height="9px" style="background: url(img/uc_topleft.png) no-repeat;">
+        </td>
+        <td width="100%" height="9px" background="img/uc_topfill.png">
+        </td>
+        <td width="9px" height="9px">
+        <img src="img/uc_topright.png" width="9" height="9" />
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="auto" style="background: url(img/uc_leftfill.png) repeat-y;">
+        </td>
+        <td width="100%" height="auto" bgcolor="#FFFFFF" style="padding: 0px;" align="left">
+        <b>Newest Members</b>
+        <br /><br />
+        <table id="latestmembers" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr>
+        <td>
+        <table align="center" width = "70px">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=Default2.aspx?userid=dml2ZWsuY2hhbmRyYUBtYXhzb2Z0d2FyZS5jb20uYXU=">
+        <img id="img" border="0" src="thumbnail.aspx?img=img/Silhouette.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+
+        Gremlin Bos..
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table align="center" width = "70px">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=Default2.aspx?userid=dmlzaG51Lmt2c0BnbWFpbC5jb20=">
+        <img id="img" border="0" src="thumbnail.aspx?img=img/Silhouette.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+
+        vishnu k
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table align="center" width = "70px">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=Default2.aspx?userid=dmlrYXNob2xrYXJAZ21haWwuY29t">
+        <img id="img" border="0" src="thumbnail.aspx?img=img/Silhouette.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+
+        vikas holka..
+        </td>
+        </tr>
+        </table>
+        </td>
+        </tr><tr>
+        <td>
+        <table align="center" width = "70px">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=Default2.aspx?userid=YWJjQGFiYy5jb20=">
+        <img id="img" border="0" src="thumbnail.aspx?img=img/Silhouette.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+
+        a b
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table align="center" width = "70px">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=Default2.aspx?userid=dmlrYXMuaG9sa2FyQG1heHNvZnR3YXJlLmNvbS5hdQ==">
+        <img id="img" border="0" src="thumbnail.aspx?img=img/Silhouette.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+
+        Vikas Holka..
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table align="center" width = "70px">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=Default2.aspx?userid=dmlrYXNo">
+        <img id="img" border="0" src="thumbnail.aspx?img=img/Silhouette.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+
+        Vikas Holka..
+        </td>
+        </tr>
+        </table>
+        </td>
+        </tr><tr>
+        <td>
+        <table align="center" width = "70px">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=Default2.aspx?userid=a290aS5tdWt0aW5lbmlAbWF4c29mdHdhcmUuY29tLmF1">
+        <img id="img" border="0" src="thumbnail.aspx?img=img/Silhouette.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+
+        koti M
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table align="center" width = "70px">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=Default2.aspx?userid=dml2QGJhdHRsZWJ1bmtlci5jb20=">
+        <img id="img" border="0" src="thumbnail.aspx?img=img/Silhouette.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+
+        Mr Green
+        </td>
+        </tr>
+        </table>
+        </td><td></td>
+        </tr>
+        </table>
+        </td>
+        <td width="9px" height="auto" background="img/uc_rightfill.png">
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="11px" align="right">
+        <img src="img/uc_botleft.png" width="9" height="11" />
+        </td>
+        <td width="auto" height="11px" background="img/uc_botfill.png">
+        </td>
+        <td width="9" height="11px">
+        <img src="img/uc_botright.png" width="9" height="11" />
+        </td>
+        </tr>
+        </table>
+        <br />
+        <br />
+        <table width="300" border="0" cellpadding="0" cellspacing="0" style="padding: 0;">
+        <tr>
+        <td width="9px" height="9px" style="background: url(img/uc_topleft.png) no-repeat;">
+        </td>
+        <td width="100%" height="9px" background="img/uc_topfill.png">
+        </td>
+        <td width="9px" height="9px">
+        <img src="img/uc_topright.png" width="9" height="9" />
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="auto" style="background: url(img/uc_leftfill.png) repeat-y;">
+        </td>
+        <td width="100%" height="auto" bgcolor="#FFFFFF" style="padding: 0px;" align="left">
+        <b>Latest Photos</b><br />
+        <br />
+        <table id="latestphotos" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr>
+        <td>
+        <table align="center">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigPic.aspx?userid=ZnJlZF9raW5nX2lndWFuYUBob3RtYWlsLmNvbQ==\album=TWUgbWFpbmx5\pic=13">
+        <img id="img" border="0" src="thumbnail.aspx?img=gallery/fred_king_iguana@hotmail.com_l_bda1ce699fec5cc23868f75666420991.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        </table>
+
+        </td><td>
+        <table align="center">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigPic.aspx?userid=ZnJlZF9raW5nX2lndWFuYUBob3RtYWlsLmNvbQ==\album=TWUgbWFpbmx5\pic=12">
+        <img id="img" border="0" src="thumbnail.aspx?img=gallery/fred_king_iguana@hotmail.com_l_9ee4084ad84e6597bd7c669c7c37c7b3.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        </table>
+
+        </td><td>
+        <table align="center">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigPic.aspx?userid=ZnJlZF9raW5nX2lndWFuYUBob3RtYWlsLmNvbQ==\album=TWUgbWFpbmx5\pic=11">
+        <img id="img" border="0" src="thumbnail.aspx?img=gallery/fred_king_iguana@hotmail.com_profile.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        </table>
+
+        </td><td>
+        <table align="center">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigPic.aspx?userid=Y2hhbmdlenNoYWlraEBnbWFpbC5jb20=\album=VGhlIGZpcnN0IGV2ZXIgYWxidW0=\pic=10">
+        <img id="img" border="0" src="thumbnail.aspx?img=gallery/changezshaikh@gmail.com_assassins-creed-20060921105332117.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        </table>
+
+        </td>
+        </tr><tr>
+        <td>
+        <table align="center">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigPic.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\album=V2FyaGFtbWVyIFBvc3RlcnM=\pic=9">
+        <img id="img" border="0" src="thumbnail.aspx?img=gallery/guptyboy@hotmail.com_warhammer_poster.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        </table>
+
+        </td><td>
+        <table align="center">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigPic.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\album=V2FyaGFtbWVyIFBvc3RlcnM=\pic=8">
+        <img id="img" border="0" src="thumbnail.aspx?img=gallery/guptyboy@hotmail.com_chosen_v_warriorPriest.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        </table>
+
+        </td><td>
+        <table align="center">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigPic.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\album=V2FyaGFtbWVyIFBvc3RlcnM=\pic=7">
+        <img id="img" border="0" src="thumbnail.aspx?img=gallery/guptyboy@hotmail.com_40k Awkward Moments.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        </table>
+
+        </td><td>
+        <table align="center">
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigPic.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\album=V2FyaGFtbWVyIFBvc3RlcnM=\pic=6">
+        <img id="img" border="0" src="thumbnail.aspx?img=gallery/guptyboy@hotmail.com_dwarfvslizardmen.jpg&width=50"
+        alt="content" />
+        </a>
+        </td>
+        </tr>
+        </table>
+
+        </td>
+        </tr>
+        </table>
+        </td>
+        <td width="9px" height="auto" background="img/uc_rightfill.png">
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="11px" align="right">
+        <img src="img/uc_botleft.png" width="9" height="11" />
+        </td>
+        <td width="auto" height="11px" background="img/uc_botfill.png">
+        </td>
+        <td width="9" height="11px">
+        <img src="img/uc_botright.png" width="9" height="11" />
+        </td>
+        </tr>
+        </table>
+        <br />
+        <br />
+        <table width="300" border="0" cellpadding="0" cellspacing="0" style="padding: 0;">
+        <tr>
+        <td width="9px" height="9px" style="background: url(img/uc_topleft.png) no-repeat;">
+        </td>
+        <td width="100%" height="9px" background="img/uc_topfill.png">
+        </td>
+        <td width="9px" height="9px">
+        <img src="img/uc_topright.png" width="9" height="9" />
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="auto" style="background: url(img/uc_leftfill.png) repeat-y;">
+        </td>
+        <td width="100%" height="auto" bgcolor="#FFFFFF" style="padding: 0px;" align="left">
+        <b>Latest Videos</b><br />
+        <br />
+        <table id="latestvids" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr>
+        <td>
+        <table>
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigVideo.aspx?userid=c2FuY2hpdC5zaGFybWFAZ21haWwuY29t\album=VW5zb3J0ZWQ=\vid=18">
+        <img id="img" border="0" src="http://img.youtube.com/vi/J7NGWn52tIg/2.jpg" alt="content" width="50" />
+        </a>
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table>
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigVideo.aspx?userid=c2FuY2hpdC5zaGFybWFAZ21haWwuY29t\album=VW5zb3J0ZWQ=\vid=17">
+        <img id="img" border="0" src="http://img.youtube.com/vi/nT3mxunh3kE/2.jpg" alt="content" width="50" />
+        </a>
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table>
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigVideo.aspx?userid=c2lkaHViaGF0aWEyM0BnbWFpbC5jb20=\album=T1JLUw==\vid=16">
+        <img id="img" border="0" src="http://img.youtube.com/vi/nDm7Ov7S3AU/2.jpg" alt="content" width="50" />
+        </a>
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table>
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigVideo.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\album=VW5zb3J0ZWQ=\vid=14">
+        <img id="img" border="0" src="http://img.youtube.com/vi/NUYL7jNfZ40/2.jpg" alt="content" width="50" />
+        </a>
+        </td>
+        </tr>
+        </table>
+        </td>
+        </tr><tr>
+        <td>
+        <table>
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigVideo.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\album=VW5zb3J0ZWQ=\vid=13">
+        <img id="img" border="0" src="http://img.youtube.com/vi/oukfXD3UaEY/2.jpg" alt="content" width="50" />
+        </a>
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table>
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigVideo.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\album=VW5zb3J0ZWQ=\vid=12">
+        <img id="img" border="0" src="http://img.youtube.com/vi/2usV7TDRQuk/2.jpg" alt="content" width="50" />
+        </a>
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table>
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigVideo.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\album=VW5zb3J0ZWQ=\vid=11">
+        <img id="img" border="0" src="http://img.youtube.com/vi/I6lZEjtI9ac/2.jpg" alt="content" width="50" />
+        </a>
+        </td>
+        </tr>
+        </table>
+        </td><td>
+        <table>
+        <tr>
+        <td align="center" valign="top">
+        <a href="login.aspx?redir=BigVideo.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\album=VW5zb3J0ZWQ=\vid=10">
+        <img id="img" border="0" src="http://img.youtube.com/vi/61N1JIaaxqA/2.jpg" alt="content" width="50" />
+        </a>
+        </td>
+        </tr>
+        </table>
+        </td>
+        </tr>
+        </table>
+        <span id="novideo"></span>
+        </td>
+        <td width="9px" height="auto" background="img/uc_rightfill.png">
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="11px" align="right">
+        <img src="img/uc_botleft.png" width="9" height="11" />
+        </td>
+        <td width="auto" height="11px" background="img/uc_botfill.png">
+        </td>
+        <td width="9" height="11px">
+        <img src="img/uc_botright.png" width="9" height="11" />
+        </td>
+        </tr>
+        </table>
+        </div>
+        <div class="rightcontent" style="margin-left: 5px;">
+        <table width="650" border="0" cellpadding="0" cellspacing="0" style="padding: 0;">
+        <tr>
+        <td width="9px" height="9px" style="background: url(img/uc_topleft.png) no-repeat;">
+        </td>
+        <td width="100%" height="9px" background="img/uc_topfill.png">
+        </td>
+        <td width="9px" height="9px">
+        <img src="img/uc_topright.png" width="9" height="9" />
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="auto" style="background: url(img/uc_leftfill.png) repeat-y;">
+        </td>
+        <td width="100%" height="auto" bgcolor="#FFFFFF" style="padding: 6px;" align="left">
+        <b>Welcome to Battlebook!</b>
+        <br />
+        <br />
+        Welcome to our community. Battlebook is a social networking and community site for
+        tabletop wargamers and role players.
+        <br />
+        <br />
+        Our team (which is lead by a gamer) wanted something new to share with the community,
+        and as such we have developed Battlebook from scratch. We didnt want to use a template
+        or an 'out-of-the-box' community framework, and as such we have developed something
+        new and unique.
+        <br />
+        <br />
+        Providing all the usual social networking features such as; friends, videos, blogs,
+        groups etc. The site is being expanded to include many industy specific applications
+        and gaming aids, including: This Paint or That Paint, Pro-Finder, Batreps etc
+        <br />
+        <br />
+        Visit the Battlebook Forums to participate or find out more information about the
+        featues we are developing, have planned or to suggest new features that you believe
+        the community would enjoy.
+        <br />
+        <br />
+        Thanks again for visiting Battlebook, we trust that you will enjoy your experience
+        and we look forward to interacting with you and the rest of the community in the
+        future.
+        <br />
+        <br />
+        Visit our forums <a href = "http://forum.battlebook.net">here</a>
+        </td>
+        <td width="9px" height="auto" background="img/uc_rightfill.png">
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="11px" align="right">
+        <img src="img/uc_botleft.png" width="9" height="11" />
+        </td>
+        <td width="auto" height="11px" background="img/uc_botfill.png">
+        </td>
+        <td width="9" height="11px">
+        <img src="img/uc_botright.png" width="9" height="11" />
+        </td>
+        </tr>
+        </table>
+        <br />
+        <br />
+        <table width="650" border="0" cellpadding="0" cellspacing="0" style="padding: 0;">
+        <tr>
+        <td width="9px" height="9px" style="background: url(img/uc_topleft.png) no-repeat;">
+        </td>
+        <td width="100%" height="9px" background="img/uc_topfill.png">
+        </td>
+        <td width="9px" height="9px">
+        <img src="img/uc_topright.png" width="9" height="9" />
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="auto" style="background: url(img/uc_leftfill.png) repeat-y;">
+        </td>
+        <td width="100%" height="auto" bgcolor="#FFFFFF" style="padding: 0px;" align="left">
+        <table>
+        <tr>
+        <td>
+        <b>Donate to Battlebook</b><br />
+        <br />
+        Battlebook is a FREE website dedicated to the involvement and inclusion of all tabletop
+        wargamers. Plans include future develop of functionality for role players also.
+        You can check the Forums for Planned development.
+        <br />
+        <br />
+        </td>
+        <td valign="top">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="4858852">
+        <input type="image" src="https://www.paypal.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal 					   - The safer, easier way to pay online.">
+        <img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        </td>
+        </tr>
+        <tr>
+        <td colspan="2">
+        We encourage you to be involved in the community and share your content with others
+        so we can all improve and enjoy our hobby to the fullest.
+        <br />
+        <br />
+        Whilst the site is free, it costs money to develop (we currently have 4 full time
+        people in the team) and to host the content. We also want to add our own video Player
+        so we dont have to rely on 3rd party video hosts like YouTube.
+        <br />
+        <br />
+        Thanks for your support!
+        </td>
+        </tr>
+        </table>
+        </td>
+        <td width="9px" height="auto" background="img/uc_rightfill.png">
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="11px" align="right">
+        <img src="img/uc_botleft.png" width="9" height="11" />
+        </td>
+        <td width="auto" height="11px" background="img/uc_botfill.png">
+        </td>
+        <td width="9" height="11px">
+        <img src="img/uc_botright.png" width="9" height="11" />
+        </td>
+        </tr>
+        </table>
+        <br />
+        <br />
+        <table width="650" border="0" cellpadding="0" cellspacing="0" style="padding: 0;">
+        <tr>
+        <td width="9px" height="9px" style="background: url(img/uc_topleft.png) no-repeat;">
+        </td>
+        <td width="100%" height="9px" background="img/uc_topfill.png">
+        </td>
+        <td width="9px" height="9px">
+        <img src="img/uc_topright.png" width="9" height="9" />
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="auto" style="background: url(img/uc_leftfill.png) repeat-y;">
+        </td>
+        <td width="100%" height="auto" bgcolor="#FFFFFF" style="padding: 0px;" align="left">
+        <b>Latest Blog Posts</b>
+        <br />
+        <br />
+        <center>
+        <table id="latestblogs" cellspacing="0" border="0" style="border-collapse:collapse;">
+        <tr>
+        <td>
+        <table width="570px">
+        <tr>
+        <td width="50%" align="left">
+        Post Title
+        </td>
+        <td align = "left">
+        Posted By
+        </td>
+        <td width="25%" align="right">
+        Posted on
+        </td>
+        </tr>
+        </table>
+        <table width="570px">
+        <tr>
+        <td width="100%">
+        <hr />
+        </td>
+        </tr>
+        </table>
+        </td>
+        </tr><tr>
+        <td>
+        <table width="570px">
+        <tr>
+        <td width="50%" align="left">
+        <a style="text-decoration: none;" href="login.aspx?redir=viewposts.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\post=3\note=2">
+        <b>
+        <span id="latestblogs_ctl01_DescriptionLabel">ads</span></b> </a>
+        </td>
+        <td width="25%" align="left">
+        <span id="latestblogs_ctl01_Label1">
+        <a href = "login.aspx?redir=default2.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=">
+        Curtis Crouch</a>
+        </span>
+        </td>
+        <td width="25%" align="right">
+        <span id="latestblogs_ctl01_datepostedon">4/24/2009 9:52:27 PM</span>
+        </td>
+        </tr>
+        </table>
+        <hr />
+        </td>
+        </tr><tr>
+        <td>
+        <table width="570px">
+        <tr>
+        <td width="50%" align="left">
+        <a style="text-decoration: none;" href="login.aspx?redir=viewposts.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=\post=2\note=2">
+        <b>
+        <span id="latestblogs_ctl02_DescriptionLabel">Now the fun begins!</span></b> </a>
+        </td>
+        <td width="25%" align="left">
+        <span id="latestblogs_ctl02_Label1">
+        <a href = "login.aspx?redir=default2.aspx?userid=Z3VwdHlib3lAaG90bWFpbC5jb20=">
+        Curtis Crouch</a>
+        </span>
+        </td>
+        <td width="25%" align="right">
+        <span id="latestblogs_ctl02_datepostedon">4/24/2009 2:39:37 PM</span>
+        </td>
+        </tr>
+        </table>
+        <hr />
+        </td>
+        </tr>
+        </table>
+        </center>
+
+        </td>
+        <td width="9px" height="auto" background="img/uc_rightfill.png">
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="11px" align="right">
+        <img src="img/uc_botleft.png" width="9" height="11" />
+        </td>
+        <td width="auto" height="11px" background="img/uc_botfill.png">
+        </td>
+        <td width="9" height="11px">
+        <img src="img/uc_botright.png" width="9" height="11" />
+        </td>
+        </tr>
+        </table>
+        <br />
+        <br />
+        <table width="650" border="0" cellpadding="0" cellspacing="0" style="padding: 0;">
+        <tr>
+        <td width="9px" height="9px" style="background: url(img/uc_topleft.png) no-repeat;">
+        </td>
+        <td width="100%" height="9px" background="img/uc_topfill.png">
+        </td>
+        <td width="9px" height="9px">
+        <img src="img/uc_topright.png" width="9" height="9" />
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="auto" style="background: url(img/uc_leftfill.png) repeat-y;">
+        </td>
+        <td width="100%" height="auto" bgcolor="#FFFFFF" style="padding: 6px;" align="left">
+        <b>Latest Forum Posts</b>
+        <br />
+        <br />
+        Sorry Sir, it seems the crypt ghouls have chewed up some wiring again, this feature is currently offline.
+        <br />
+        <br />
+
+        </td>
+        <td width="9px" height="auto" background="img/uc_rightfill.png">
+        </td>
+        </tr>
+        <tr>
+        <td width="9px" height="11px" align="right">
+        <img src="img/uc_botleft.png" width="9" height="11" />
+        </td>
+        <td width="auto" height="11px" background="img/uc_botfill.png">
+        </td>
+        <td width="9" height="11px">
+        <img src="img/uc_botright.png" width="9" height="11" />
+        </td>
+        </tr>
+        </table>
+        </div>
+        </div>
+        </div>
+
+        <script type="text/javascript">
+        //<![CDATA[
+        var Page_Validators =  new Array(document.getElementById("RequiredFieldValidator1"), document.getElementById("RequiredFieldValidator2"), document.getElementById("RequiredFieldValidator3"), document.getElementById("RequiredFieldValidator4"));
+        //]]>
+        </script>
+
+        <script type="text/javascript">
+        //<![CDATA[
+        var RequiredFieldValidator1 = document.all ? document.all["RequiredFieldValidator1"] : document.getElementById("RequiredFieldValidator1");
+        RequiredFieldValidator1.controltovalidate = "fname";
+        RequiredFieldValidator1.validationGroup = "second";
+        RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator1.initialvalue = "";
+        var RequiredFieldValidator2 = document.all ? document.all["RequiredFieldValidator2"] : document.getElementById("RequiredFieldValidator2");
+        RequiredFieldValidator2.controltovalidate = "lname";
+        RequiredFieldValidator2.validationGroup = "second";
+        RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator2.initialvalue = "";
+        var RequiredFieldValidator3 = document.all ? document.all["RequiredFieldValidator3"] : document.getElementById("RequiredFieldValidator3");
+        RequiredFieldValidator3.controltovalidate = "password1";
+        RequiredFieldValidator3.validationGroup = "second";
+        RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator3.initialvalue = "";
+        var RequiredFieldValidator4 = document.all ? document.all["RequiredFieldValidator4"] : document.getElementById("RequiredFieldValidator4");
+        RequiredFieldValidator4.controltovalidate = "email";
+        RequiredFieldValidator4.validationGroup = "second";
+        RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+        RequiredFieldValidator4.initialvalue = "";
+        //]]>
+        </script>
+
+
+        <script type="text/javascript">
+        //<![CDATA[
+
+        var Page_ValidationActive = false;
+        if (typeof(ValidatorOnLoad) == "function") {
+        ValidatorOnLoad();
+        }
+
+        function ValidatorOnSubmit() {
+        if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+        }
+        else {
+        return true;
+        }
+        }
+        Sys.Application.initialize();
+        Sys.Application.add_init(function() {
+        $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"t1_ClientState","WatermarkText":"email","id":"t1"}, null, null, $get("username"));
+        });
+        Sys.Application.add_init(function() {
+        $create(AjaxControlToolkit.TextBoxWatermarkBehavior, {"ClientStateFieldID":"TextBoxWatermarkExtender1_ClientState","WatermarkText":"password","id":"TextBoxWatermarkExtender1"}, null, null, $get("password"));
+        });
+
+        document.getElementById('RequiredFieldValidator1').dispose = function() {
+        Array.remove(Page_Validators, document.getElementById('RequiredFieldValidator1'));
+        }
+
+        document.getElementById('RequiredFieldValidator2').dispose = function() {
+        Array.remove(Page_Validators, document.getElementById('RequiredFieldValidator2'));
+        }
+
+        document.getElementById('RequiredFieldValidator3').dispose = function() {
+        Array.remove(Page_Validators, document.getElementById('RequiredFieldValidator3'));
+        }
+
+        document.getElementById('RequiredFieldValidator4').dispose = function() {
+        Array.remove(Page_Validators, document.getElementById('RequiredFieldValidator4'));
+        }
+        //]]>
+        </script>
+        </form>
+        </body>
+        </html>
